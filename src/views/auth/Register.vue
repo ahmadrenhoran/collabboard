@@ -1,13 +1,13 @@
 <template>
   <AuthLayout>
     <div
-      class="flex h-screen items-center justify-center px-6 py-12 lg:px-8 font-mono"
+      class="flex min-h-full items-center justify-center px-6 py-12 lg:px-8 font-mono"
     >
       <div
         class="bg-white rounded-xl border p-6 border-slate-100 mt-10 sm:mx-auto sm:w-full sm:max-w-sm"
       >
         <div class="flex flex-col items-center text-center gap-2 justify-center mb-4">
-          <img src="/images/login.png" alt="alt" width="150" height="100" />
+          <img src="/images/register.png" alt="alt" width="150" height="100" />
           <h1 class="font-semibold text-xl">Sign In</h1>
           <p class="text-gray-500 text-sm">Let's manage your project with us</p>
         </div>

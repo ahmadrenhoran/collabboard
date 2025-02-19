@@ -1,7 +1,7 @@
 <template>
   <AuthLayout>
     <div
-      class="flex h-screen items-center justify-center px-6 py-12 lg:px-8 font-mono"
+      class="flex min-h-full items-center justify-center px-6 py-12 lg:px-8 font-mono"
     >
       <div
         class="bg-white rounded-xl border p-6 border-slate-100 mt-10 sm:mx-auto sm:w-full sm:max-w-sm"
