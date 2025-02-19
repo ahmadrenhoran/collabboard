@@ -84,9 +84,17 @@ const signupWithEmailAndPassword = handleSubmit(async () => {
       password.value.value
     );
     console.log("User created:", userCredential.user);
+    toast.success("Login success!");
     router.push("/");
   } catch (error) {
     console.error("Error during registration:", error.message);
+    if (error.code === "auth/invalid-credential") {
+      toast.error("Incorrect email or password!", { timeout: false });
+    } else if (error.code === "auth/too-many-requests") {
+      toast.error("Too many failed attempts. Try again later.");
+    } else {
+      toast.error("Login failed! Please try again.");
+    }
   }
 });
 </script>
